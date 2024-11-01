@@ -1,0 +1,8 @@
+# Ei viedä mitään .tmp päätteistä tiedostoa gittiin juurikansiosta
+*.tmp
+
+# Ei viedä  __pycache__
+__pycache__
+
+# Ei viedä  .pytest_cache
+.pytest_cache
