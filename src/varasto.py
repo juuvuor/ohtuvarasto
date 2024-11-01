@@ -20,13 +20,15 @@ class Varasto:
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
 
+
+#rikotaan tämä
     def lisaa_varastoon(self, maara):
-        if maara < 0:
+        if maara < 10:
             return
         if maara <= self.paljonko_mahtuu():
-            self.saldo = self.saldo + maara
+            self.saldo = self.saldo + maara + 10
         else:
-            self.saldo = self.tilavuus
+            self.saldo = self.tilavuus + 10
 
     def ota_varastosta(self, maara):
         if maara < 0:
